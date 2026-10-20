@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HumanWrite AI — Make Every Word Sound Naturally Yours</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">H</div>
+      <div>
+        <h1>HumanWrite AI</h1>
+        <p class="tagline">Make Every Word Sound Naturally Yours.</p>
+      </div>
+    </div>
+    <button id="theme-toggle" class="btn btn-ghost" type="button" aria-label="Toggle light or dark mode">🌙 Dark</button>
+  </div>
+  <nav class="tabs" aria-label="Main views">
+    <button class="tab active" data-view="dashboard" type="button">Dashboard</button>
+    <button class="tab" data-view="editor" type="button">Editor</button>
+    <button class="tab" data-view="analyze" type="button">Analyze</button>
+    <button class="tab" data-view="humanize" type="button">Humanize</button>
+    <button class="tab" data-view="compare" type="button">Compare</button>
+    <button class="tab" data-view="quality" type="button">Quality</button>
+    <button class="tab" data-view="export" type="button">Export</button>
+    <button class="tab" data-view="history" type="button">History</button>
+    <button class="tab" data-view="settings" type="button">Settings</button>
+  </nav>
+</header>
+
+<main id="view" class="container" aria-live="polite"></main>
+
+<footer class="app-footer">
+  <p>Created by Dr. Asif Ahmad</p>
+</footer>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
